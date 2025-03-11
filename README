@@ -1,0 +1,7 @@
+KBDRGB is an easy way to change the keyboard color scheme
+---------------------------------------------------------
+
+Make sure that your system has the file
+`/sys/class/leds/rgb:kbd_backlight/multi_intensity`
+
+If not, or there are other options, then be sure to report it to issues, or do a pr with the addition of support for more keyboards!
