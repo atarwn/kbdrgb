@@ -1,7 +1,13 @@
-KBDRGB is an easy way to change the keyboard color scheme
----------------------------------------------------------
+kbdrgb is a simple way to change the color scheme of your keyboard
+------------------------------------------------------------------
 
-Make sure that your system has the file
-`/sys/class/leds/rgb:kbd_backlight/multi_intensity`
+Please make sure that your system has the `/sys/class/leds/kbd_backlight/multi_intensity` file. If not, or if there are other options available, please report it as an issue or do a pull request to add support for more keyboard types!
 
-If not, or there are other options, then be sure to report it to issues, or do a pr with the addition of support for more keyboards!
+
+Usage
+-----
+
+To use kbdrgb, simply run the command:
+`kbdrgb <color>`
+
+For example, `kbdrgb '0 255 55'` will set the color to emerald.
