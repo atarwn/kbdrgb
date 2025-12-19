@@ -1,15 +1,13 @@
-INSTALL_DIR = /usr/bin
 SCRIPT_NAME = kbdrgb.sh
-TARGET_NAME = kbdrgb
 
 all:
 	@echo "Run 'make install' to install $(TARGET_NAME) into $(INSTALL_DIR)."
 
 install:
-	sudo install -m 755 $(SCRIPT_NAME) $(INSTALL_DIR)/$(TARGET_NAME)
+	cat $(SCRIPT_NAME) >> ~/.bashrc
 
 uninstall:
-	sudo rm -f $(INSTALL_DIR)/$(TARGET_NAME)
+	@echo "I'm too lazy to write uninstall code. Just remove kbdr function from your bashrc."
 
 clean:
 	@echo "No build artifacts to clean."
